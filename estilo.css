@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #4a148c;
+    --light-color: #7c43bd;
+    --dark-color: #12005e;
+    --text-color: whitesmoke;
+  }
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+    background-color: var(--primary-color);
+    height: 30vh;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.textos{
+    height: 5vh;
+    border-width: 0px 0px 2px 0px;
+    margin: 2vh;
+    width: 80%;
+    border-color: var(--light-color);
+    background-color: var(--primary-color);
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.textos:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: var(--text-color);
+    opacity: .7;
+  }
+
+.boton{
+    height: 5vh;
+    width: 10%;
+    border-width: 0px 0px 0px 0px;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+
+li{
+    color: var(--text-color);
+    background-color: var(--light-color);
+    font-size: 1.5rem;
+    list-style-type: none; 
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span{
+    background-color: #f50057;
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+span:hover{
+    background-color: #9b0000;
+    cursor: pointer;
+}
